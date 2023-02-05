@@ -2,9 +2,11 @@
     --white: #ffffff;
     --coffee: #6B350E;
     --overlay: #4A2409; /* rgba(74, 36, 9, 1) */
+    --background: #35667C;
 }
 
 body {
+    /* box-sizing: border-box; */
     display: block;
     margin: 0;
     padding: 0;
@@ -13,28 +15,16 @@ body {
     color: var(--coffee);
 }
 
-.container {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-    gap: 30px; */
+header {
+    color: var(--white);
+    background-image:  linear-gradient(rgba(74, 36, 9, 1), rgba(74,36,9, .25), rgba(0,0,0, 0)), url(img/header-photo.png);
+    background-size: cover;
 }
 
 #logo {
     display: flex;
     justify-content: center;
     padding: 20px 0;
-}
-
-header {
-    grid-area: header;
-    color: var(--white);
-    background-image:  linear-gradient(rgba(74, 36, 9, .7), rgba(0,0,0, 0)), url(img/header-photo.png);
-    background-size: cover;
 }
 
 header h1 {
@@ -70,7 +60,6 @@ nav li {
 }
 
 main {
-    grid-area: main;
     text-align: center;
 }
 
@@ -105,11 +94,19 @@ main img {
 
 .features img {
     border-radius: 20px;
+    margin-top: 50px;
+}
+
+main h2 {
+    margin: 0;
+    padding: 0;
 }
 
 main h3 {
     font-weight: 700;
     font-size: 30px;
+    margin: 0;
+    padding: 5px 0px;
 }
 
 .menu{
@@ -117,45 +114,43 @@ main h3 {
     font-size: 36px;
     width: 390px;
     height: 300px;
-    /* display: block; */
-    margin: 20px auto;
+    margin: 40px auto;
     color: var(--white);
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    line-height: 50px;
 } 
 
 .drink-menu {
-    background-image: url(img/drink-menu-photo.png);
+    background-image: linear-gradient(rgba(0,0,0, 0), rgba(74, 36, 9, 0), rgba(74, 36, 9, 1)),url(img/drink-menu-photo.png);
     background-size: cover;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
 }
 
 .food-menu {
-    background-image: url(img/food-menu-photo.png);
+    background-image: linear-gradient(rgba(0,0,0, 0), rgba(74, 36, 9, 0), rgba(74, 36, 9, 1)),url(img/food-menu-photo.png);
     background-size: cover;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-
 }
 
 footer {
-    grid-area: footer;
     margin-top: 50px;
     border-top: solid 2px rgba(107, 53, 14, 0.4);
     padding-top: 20px;
 }
 
-footer > * {
+.contact p:first-child {
+    font-weight: 800;
+}
+
+footer p {    
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 22px;
-}
-
-footer h2 {
-    font-weight: 800;
 }
 
 #socials {
@@ -171,11 +166,119 @@ footer h2 {
 .copyright {
     font-size: 14px;
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
-@media (min-width: 600px) {
-    nav ul{
-    display: flex;
-    justify-content: flex-end;
+@media (min-width: 750px) {
+    html {
+        padding: 20px 50px;
+        background-color: var(--background);
     }
+
+    .container {
+        border-radius: 20px;
+        background-color: var(--white);
+        padding-top: 1px;
+    }
+
+    header {
+        border-radius: 10px;
+        position: relative;
+        margin: 10px;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px;
+        margin-left: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+
+    nav li {
+        padding-right: 20px;
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .sign {
+        display: block;
+    }
+
+    .features {
+        max-width: 1080px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px auto;
+        padding: 0 auto;
+    }
+
+    .features img {
+        margin: 0;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text p{
+        margin: 0;
+    }
+
+    .features:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    .features:nth-of-type(odd) {
+        text-align: left;
+    }
+
+    .features > * {
+        flex-basis: 50%;
+        margin: 20px;
+    }
+
+	/*
+	section > *  {
+		flex-basis: 50%;
+		margin: 20px; */
+
+    .menu {
+        display: inline-flex;
+        margin: 20px;
+        width: 500px;
+        height: 390px;
+        /* 1040 wide px to fit */
+    }
+
+    .contact {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact p {
+        flex-grow: 1;
+    }
+    .contact p:first-child {
+        order: 1;
+    } 
+    .contact p:last-child {
+        order: 2;
+    }
+    
 }
