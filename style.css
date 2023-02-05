@@ -125,15 +125,17 @@ main h3 {
 .drink-menu {
     background-image: linear-gradient(rgba(0,0,0, 0), rgba(74, 36, 9, 0), rgba(74, 36, 9, 1)),url(img/drink-menu-photo.png);
     background-size: cover;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
+    border-radius: 20px;
+    /* -webkit-border-radius: 20px;
+    -moz-border-radius: 20px; */
 }
 
 .food-menu {
     background-image: linear-gradient(rgba(0,0,0, 0), rgba(74, 36, 9, 0), rgba(74, 36, 9, 1)),url(img/food-menu-photo.png);
     background-size: cover;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
+    border-radius: 20px;
+    /* -webkit-border-radius: 20px;
+    -moz-border-radius: 20px; */
 }
 
 footer {
