@@ -9,5 +9,5 @@ This project was done for a class exercise by taking a designed template from Fi
 
 Go to [https://jchen2190@github.io/Ground-Up](https://jchen2190.github.io/Ground-Up/)
 
-**Note**
+**Note: **
 The links to this file does not lead anywhere. This project is focuses on design template only.
