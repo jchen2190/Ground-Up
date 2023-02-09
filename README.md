@@ -7,4 +7,4 @@ This project was done for a class exercise by taking a designed template from Fi
 
 ## Deployment
 
-[https://jchen2190@github.io/Ground-Up]
+Go to https://jchen2190@github.io/Ground-Up
