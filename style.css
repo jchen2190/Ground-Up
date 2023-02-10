@@ -13,6 +13,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: normal;
     color: var(--coffee);
+    /* text-shadow: 0 4px 4px #00000025; */
 }
 
 header {
@@ -38,7 +39,7 @@ header h1 {
     font-weight: 900;
     font-size: 40px;
     line-height: 45px;
-    text-shadow: var(--coffee) 1px 0 10px;
+    text-shadow: 0px 5px 12px var(--overlay);
 }
 
 nav {
@@ -66,7 +67,8 @@ nav a:link, nav a:visited {
 }
 nav a:active, nav a:hover {
     text-decoration: none;
-    transform: scale(1.15);
+    transform: scale(1.1);
+    transition: .1s ease;
 }
 
 main {
@@ -133,17 +135,22 @@ main h3 {
     padding: 5px 0px;
 }
 
+.menu-container a {
+    text-decoration: none;
+}
+
 .menu{
     font-weight: 900;
     font-size: 36px;
     width: 390px;
     height: 300px;
+    /* aspect-ratio: 502/390; */
     margin: 40px auto;
     color: var(--white);
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    line-height: 50px;
+    line-height: 75px;
 } 
 
 .drink-menu {
@@ -212,8 +219,12 @@ footer p {
     header h1 {
         padding-top: 300px;
         align-items: center;
+        font-size: 47px;
     }
 
+    .slang {
+        font-size: 25px;
+    }
     #logo {
         display: flex;
         justify-content: flex-start;
@@ -246,6 +257,10 @@ footer p {
     .sign {
         display: block;
         padding: 0 0 20px;
+    }
+
+    .intro h3 {
+        font-size: 38px;
     }
 
    .features {
@@ -304,6 +319,10 @@ footer p {
     } 
     .contact p:last-child {
         order: 2;
+    }
+
+    footer p {
+        font-size: 25px;
     }
     
 }
