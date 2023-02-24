@@ -16,6 +16,7 @@ ScrollTrigger.matchMedia( {
         gsap.from(featureImg[i], {scrollTrigger: 
             {trigger: featureImg[i], start: 'top 85%', end: 'bottom 80%', scrub: 1, },
             x: -movement,  // odd rows
+            // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
             opacity: 0 } );
         
         // animate current text each time thru the loop
@@ -26,3 +27,11 @@ ScrollTrigger.matchMedia( {
         }; 
     }
 } );
+
+gsap.from("#logo", { duration: .5, y: -200, } )
+gsap.from("header li", { duration: .5, y: -200 } )
+gsap.from ("header h1", { duration: .5, x: -3000 } )
+
+// let tl = gsap.timeline( {repeat: -1, repeatDelay: 2} );
+// tl  // can chain, semicolon not needed
+// tl.fromTo('header *', {duration: .5, scale: 1, y: 15}, {duration: .8, scale: 1, y: 15, transformOrigin: 'center center', stagger: 0.02, ease: 'back.out'}, );
