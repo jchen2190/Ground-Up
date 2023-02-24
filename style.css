@@ -13,7 +13,6 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: normal;
     color: var(--coffee);
-    /* text-shadow: 0 4px 4px #00000025; */
 }
 
 header {
@@ -68,7 +67,7 @@ nav a:link, nav a:visited {
 nav a:active, nav a:hover {
     text-decoration: none;
     transform: scale(1.1);
-    transition: .1s ease;
+    transition: .3s ease;
 }
 
 main {
@@ -108,7 +107,7 @@ main {
     text-align: left;
     margin: 0 auto;
     word-wrap: normal;
-    max-width: 320px;
+    max-width: 390px;
 }
 
 .features img {
@@ -165,6 +164,10 @@ main h3 {
     border-radius: 20px;
 }
 
+.menu-container a:active, .menu-container a:hover {
+    transform: scale(1.2);
+}
+
 footer {
     margin-top: 50px;
     border-top: solid 2px rgba(107, 53, 14, 0.4);
@@ -186,6 +189,11 @@ footer p {
     display: inline-flex;
     width: 100%;
     justify-content: center;
+}
+
+#socials a:active, #socials a:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
 }
 
 #socials img {
