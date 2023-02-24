@@ -5,6 +5,11 @@ This project was done for a class exercise by taking a designed template from Fi
 
 ![Screenshot](/img/Figma-screenshot.png)
 
+## Technologies
+
+This project was created using primarily CSS.
+Implemented Javascript with GreenSock (GSAP).
+
 ## Deployment
 
 Go to [https://jchen2190@github.io/Ground-Up](https://jchen2190.github.io/Ground-Up/)
