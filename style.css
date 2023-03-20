@@ -4,7 +4,6 @@
     --overlay: #4A2409; /* rgba(74, 36, 9, 1) */
     --background: #35667C;
 }
-
 body {
     box-sizing: border-box;
     display: block;
@@ -14,20 +13,17 @@ body {
     font-weight: normal;
     color: var(--coffee);
 }
-
 header {
     color: var(--white);
     background-image:  linear-gradient(rgba(74, 36, 9, 1), rgba(74,36,9, .25), rgba(0,0,0, 0)), url(img/header-photo.png);
     background-size: cover;
     height: 800px;
 }
-
 #logo {
     display: flex;
     justify-content: center;
     padding: 20px 0;
 }
-
 header h1 {
     display: flex;
     justify-content: center;
@@ -40,12 +36,10 @@ header h1 {
     line-height: 45px;
     text-shadow: 0px 5px 12px var(--overlay);
 }
-
 nav {
     display: flex;
     justify-content: center;
 }
-
 nav ul {
     width: 100%;
     list-style-type: none;
@@ -53,13 +47,11 @@ nav ul {
     justify-content: space-around;
     padding: 0 20px;
 }
-
 nav li {
     display: inline-flex;
     text-transform: uppercase;
     font-size: 22px;
 }
-
 nav a:link, nav a:visited {
     text-decoration: none;
     color: currentColor;
@@ -69,37 +61,30 @@ nav a:active, nav a:hover {
     transform: scale(1.1);
     transition: .3s ease;
 }
-
 main {
     text-align: center;
 }
-
 .slang {
     font-size: 20px;
     margin: 0
 }
-
 .intro {
     margin: 50px 0;
 }
-
 .intro h2 {
     font-weight: 900;
     font-size: 40px;
     text-align: center;
     margin: 0 auto;
 }
-
 .intro h3 {
     font-weight: 600;
 }
-
 .sign {
     width: 100%;
     height: 84px;
     padding: 20px 0;
 }
-
 .features {
     display: block;
     justify-content: center;
@@ -109,7 +94,6 @@ main {
     word-wrap: normal;
     max-width: 390px;
 }
-
 .features img {
     border-radius: 20px;
     margin-top: 50px;
@@ -121,23 +105,19 @@ main {
     align-content: center;
     height: auto;
 }
-
 main h2 {
     margin: 0;
     padding: 0;
 }
-
 main h3 {
     font-weight: 700;
     font-size: 30px;
     margin: 0;
     padding: 5px 0px;
 }
-
 .menu-container a {
     text-decoration: none;
 }
-
 .menu{
     font-weight: 900;
     font-size: 36px;
@@ -151,85 +131,70 @@ main h3 {
     align-items: flex-end;
     line-height: 75px;
 } 
-
 .drink-menu {
     background-image: linear-gradient(rgba(0,0,0, 0), rgba(74, 36, 9, 0), rgba(74, 36, 9, 1)),url(img/drink-menu-photo.png);
     background-size: cover;
     border-radius: 20px;
 }
-
 .food-menu {
     background-image: linear-gradient(rgba(0,0,0, 0), rgba(74, 36, 9, 0), rgba(74, 36, 9, 1)),url(img/food-menu-photo.png);
     background-size: cover;
     border-radius: 20px;
 }
-
 .menu-container a:active, .menu-container a:hover {
     transform: scale(1.2);
 }
-
 footer {
     margin-top: 50px;
     border-top: solid 2px rgba(107, 53, 14, 0.4);
     padding-top: 20px;
 }
-
 .contact p:first-child {
     font-weight: 800;
 }
-
 footer p {    
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 22px;
 }
-
 #socials {
     display: inline-flex;
     width: 100%;
     justify-content: center;
 }
-
 #socials a:active, #socials a:hover {
     transform: scale(1.1);
     transition: 0.5s ease;
 }
-
 #socials img {
     padding: 0 10px;
 }
-
 .copyright {
     font-size: 14px;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
-
 @media (min-width: 750px) {
     html {
         padding: 20px 50px;
         background-color: var(--background);
     }
-
     .container {
         border-radius: 20px;
         background-color: var(--white);
         padding-top: 1px;
     }
-
     header {
         border-radius: 10px;
         position: relative;
         margin: 10px 10px 50px 10px;
     }
-
     header h1 {
         padding-top: 300px;
         align-items: center;
         font-size: 47px;
     }
-
     .slang {
         font-size: 25px;
     }
@@ -239,7 +204,6 @@ footer p {
         padding: 20px;
         margin-left: 20px;
     }
-
     nav ul {
         display: flex;
         position: absolute;
@@ -247,92 +211,72 @@ footer p {
         justify-content: flex-end;
         margin-right: 20px;
     }
-
     nav li {
         padding-right: 20px;
     }
-
     main {
         box-sizing: border-box;
         margin: auto 20px;
     }
-
     .slang {
         font-size: 22px;
         font-weight: 600;
     }
-
     .sign {
         display: block;
         padding: 0 0 20px;
     }
-
     .intro h3 {
         font-size: 38px;
     }
-
    .features {
         max-width: 1080px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 80px auto;
-        /* padding: 0 auto; */
-        /* flex-shrink: 1; */
     }
-
     .features img {
         max-width: 200px;
         margin: 0 20px;
     }
-
     .text {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         padding: 0 20px;
     }
-
     .text p{
         margin: 0;
     }
-
     .features:nth-of-type(even) {
         flex-direction: row-reverse;
     }
-
     .features:nth-of-type(odd) {
         text-align: left;
     }
-
     .menu {
         display: inline-flex;
         justify-content: center;
         margin: 20px;
         /* 1040 wide px to fit */
     }
-
     .contact {
         display: inline-flex;
         justify-content: space-around;
         width: 100%;
     }
-
     .contact p {
         width: 33%;
     }
-
     .contact p:first-child {
         order: 1;
     } 
     .contact p:last-child {
         order: 2;
     }
-
     footer p {
         font-size: 25px;
     }
-    
 }
 
 @media (min-width: 900px) {
@@ -340,7 +284,6 @@ footer p {
         max-width: 275px;
     }
 }
-
 @media (min-width: 1100px) {
     .features img {
         max-width: 100%;
